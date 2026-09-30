@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SSLC 2025–26 | Performance Dashboard</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f5f7fb;color:#182230;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif}
+.wrap{max-width:1280px;margin:auto;padding:28px}
+.hero{background:linear-gradient(135deg,#111c3d,#315efb 58%,#7258e8);color:#fff;border-radius:24px;padding:34px 36px;box-shadow:0 18px 50px rgba(25,48,110,.18)}
+.kicker{font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;opacity:.75}
+h1{font-size:35px;margin:7px 0 5px;letter-spacing:-.8px}
+.hero p{margin:0;opacity:.82;font-size:14px}
+.grid{display:grid;gap:18px}
+.cards{grid-template-columns:repeat(5,1fr);margin-top:18px}
+.card{background:#fff;border:1px solid #e6eaf0;border-radius:18px;padding:20px;box-shadow:0 8px 28px rgba(20,35,70,.055)}
+.label{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:#7a8495;font-weight:800}
+.value{font-size:29px;font-weight:850;margin-top:7px}
+.muted{font-size:12px;color:#7a8495;margin-top:5px}
+.two{grid-template-columns:1fr 1fr;margin-top:18px}
+.section{margin-top:22px}
+.section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:12px}
+h2{font-size:20px;margin:0;letter-spacing:-.2px}
+.badge,.teacher{display:inline-block;padding:5px 9px;border-radius:999px;background:#eef2ff;color:#315efb;font-size:11px;font-weight:800}
+.note{background:#f7f9ff;border:1px solid #e1e7ff;border-radius:13px;padding:14px;font-size:12px;line-height:1.55;color:#536078}
+.bar{display:grid;grid-template-columns:150px 1fr 55px;align-items:center;gap:12px;margin:16px 0}
+.bar-name{font-size:13px;font-weight:700}
+.track,.mini-track{background:#edf0f5;border-radius:99px;overflow:hidden}
+.track{height:12px} .mini-track{height:8px}
+.fill,.mini-fill{height:100%;background:linear-gradient(90deg,#315efb,#7258e8);border-radius:99px}
+.num{font-weight:800;text-align:right;font-size:13px}
+.grade-grid{display:grid;grid-template-columns:repeat(9,1fr);gap:8px}
+.grade{padding:12px 5px;text-align:center;border:1px solid #e8ecf2;border-radius:12px;background:#fafbfc}
+.grade strong{display:block;font-size:19px} .grade span{font-size:11px;color:#7a8495}
+table{width:100%;border-collapse:collapse}
+th,td{padding:12px 10px;border-bottom:1px solid #edf0f4;font-size:13px}
+th{font-size:10px;text-transform:uppercase;letter-spacing:.7px;color:#8992a1;text-align:left}
+.right{text-align:right}
+.rank{display:inline-flex;align-items:center;justify-content:center;width:30px;height:26px;border-radius:8px;background:#f0f2f6;font-size:11px;font-weight:850}
+.rank.gold{background:#e9efff;color:#315efb}
+.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:15px}
+.summary-box{padding:15px;border-radius:13px;background:#fafbfe;border:1px solid #e8ecf2}
+.summary-box b{display:block;font-size:15px;margin-top:5px}
+.footer{text-align:center;color:#929aaa;font-size:11px;padding:28px 0 8px}
+@media(max-width:950px){.cards{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.wrap{padding:14px}.cards,.two,.summary{grid-template-columns:1fr 1fr}.grade-grid{grid-template-columns:repeat(3,1fr)}.bar{grid-template-columns:110px 1fr 48px}h1{font-size:27px}}
+@media(max-width:480px){.cards,.two,.summary{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <div class="kicker">Academic Performance Analytics</div>
+  <h1>SSLC 2025–26 Batch Performance</h1>
+  <p>Updated from the latest marklist • 33 students • 10 subjects</p>
+</header>
+
+<section class="grid cards">
+  <div class="card"><div class="label">Students</div><div class="value">33</div><div class="muted">Updated batch strength</div></div>
+  <div class="card"><div class="label">Class Average</div><div class="value">6.76<small style="font-size:14px;color:#7a8495"> / 9</small></div><div class="muted">Mean grade point</div></div>
+  <div class="card"><div class="label">A+ / A Entries</div><div class="value">155</div><div class="muted">Out of 330 entries</div></div>
+  <div class="card"><div class="label">Students ≥ 8.00</div><div class="value">3</div><div class="muted">Average grade point</div></div>
+  <div class="card"><div class="label">Subjects</div><div class="value">10</div><div class="muted">10 assessed subjects</div></div>
+</section>
+
+<section class="grid two">
+  <div class="card">
+    <div class="section-head"><h2>Overall Class Performance</h2><span class="badge">1–9 scale</span></div>
+    <div class="bar"><div class="bar-name">Class Average</div><div class="track"><div class="fill" style="width:75.2%"></div></div><div class="num">6.76</div></div>
+    <div class="note">Grade-point conversion used for analysis: A+ = 9, A = 8, B+ = 7, B = 6, C+ = 5, C = 4, D+ = 3, D = 2, E = 1.</div>
+    <div class="summary">
+      <div class="summary-box"><span class="label">Highest subject average</span><b>First Language 1</b></div>
+      <div class="summary-box"><span class="label">Lowest subject average</span><b>Chemistry</b></div>
+      <div class="summary-box"><span class="label">Teacher codes</span><b>7 teachers</b></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="section-head"><h2>Grade Distribution</h2><span class="badge">All entries</span></div>
+    <div class="grade-grid"><div class="grade"><strong>106</strong><span>A+</span></div><div class="grade"><strong>49</strong><span>A</span></div><div class="grade"><strong>33</strong><span>B+</span></div><div class="grade"><strong>34</strong><span>B</span></div><div class="grade"><strong>47</strong><span>C+</span></div><div class="grade"><strong>36</strong><span>C</span></div><div class="grade"><strong>22</strong><span>D+</span></div><div class="grade"><strong>3</strong><span>D</span></div><div class="grade"><strong>0</strong><span>E</span></div></div>
+    <div class="muted" style="margin-top:13px">Distribution across 33 students × 10 subjects.</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head"><h2>Subject Performance & Ranking</h2><span class="badge">Mean grade point</span></div>
+  <div class="card">
+    <div class="bar"><div class="bar-name">First Language 1</div><div class="track"><div class="fill" style="width:99.7%"></div></div><div class="num">8.97</div></div><div class="bar"><div class="bar-name">First Language 2</div><div class="track"><div class="fill" style="width:97.3%"></div></div><div class="num">8.76</div></div><div class="bar"><div class="bar-name">IT</div><div class="track"><div class="fill" style="width:93.3%"></div></div><div class="num">8.39</div></div><div class="bar"><div class="bar-name">Third Language</div><div class="track"><div class="fill" style="width:93.3%"></div></div><div class="num">8.39</div></div><div class="bar"><div class="bar-name">English</div><div class="track"><div class="fill" style="width:80.1%"></div></div><div class="num">7.21</div></div><div class="bar"><div class="bar-name">Physics</div><div class="track"><div class="fill" style="width:66.7%"></div></div><div class="num">6.00</div></div><div class="bar"><div class="bar-name">Biology</div><div class="track"><div class="fill" style="width:61.6%"></div></div><div class="num">5.55</div></div><div class="bar"><div class="bar-name">Social Science</div><div class="track"><div class="fill" style="width:55.9%"></div></div><div class="num">5.03</div></div><div class="bar"><div class="bar-name">Mathematics</div><div class="track"><div class="fill" style="width:52.2%"></div></div><div class="num">4.70</div></div><div class="bar"><div class="bar-name">Chemistry</div><div class="track"><div class="fill" style="width:51.5%"></div></div><div class="num">4.64</div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="card">
+    <div class="section-head"><h2>Subject Ranking</h2><span class="badge">Higher average → higher rank</span></div>
+    <table>
+      <thead><tr><th>Rank</th><th>Subject</th><th>Teacher</th><th>Performance</th><th class="right">Average</th></tr></thead>
+      <tbody>
+    <tr>
+      <td><span class="rank gold">1</span></td>
+      <td><b>First Language 1</b></td>
+      <td><span class="teacher">AZZ</span></td>
+      <td><div class="mini-track"><div class="mini-fill" style="width:99.7%"></div></div></td>
+      <td class="right"><b>8.97</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">2</span></td>
+      <td><b>First Language 2</b></td>
+      <td><span class="teacher">AHM</span></td>
+      <td><div class="mini-track"><div class="mini-fill" style="width:97.3%"></div></div></td>
+      <td class="right"><b>8.76</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">3</span></td>
+      <td><b>IT</b></td>
+      <td><span class="teacher">RSD</span></td>
+      <td><div class="mini-track"><div class="mini-fill" style="width:93.3%"></div></div></td>
+      <td class="right"><b>8.39</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">3</span></td>
+      <td><b>Third Language</b></td>
+      <td><span class="teacher">AZZ</span></td>
+      <td><div class="mini-track"><div class="mini-fill" style="width:93.3%"></div></div></td>
+      <td class="right"><b>8.39</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">5</span></td>
+      <td><b>English</b></td>
+      <td><span class="teacher">SMS</span></td>
+      <td><div class="mini-track"><div class="mini-fill" style="width:80.1%"></div></div></td>
+      <td class="right"><b>7.21</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">6</span></td>
+      <td><b>Physics</b></td>
+      <td><span class="teacher">FRQ</span></td>
+      <td><div class="mini-track"><div class="mini-fill" style="width:66.7%"></div></div></td>
+      <td class="right"><b>6.00</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">7</span></td>
+      <td><b>Biology</b></td>
+      <td><span class="teacher">SMD</span></td>
+      <td><div class="mini-track"><div class="mini-fill" style="width:61.6%"></div></div></td>
+      <td class="right"><b>5.55</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">8</span></td>
+      <td><b>Social Science</b></td>
+      <td><span class="teacher">FRQ</span></td>
+      <td><div class="mini-track"><div class="mini-fill" style="width:55.9%"></div></div></td>
+      <td class="right"><b>5.03</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">9</span></td>
+      <td><b>Mathematics</b></td>
+      <td><span class="teacher">MHD</span></td>
+      <td><div class="mini-track"><div class="mini-fill" style="width:52.2%"></div></div></td>
+      <td class="right"><b>4.70</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">10</span></td>
+      <td><b>Chemistry</b></td>
+      <td><span class="teacher">FRQ</span></td>
+      <td><div class="mini-track"><div class="mini-fill" style="width:51.5%"></div></div></td>
+      <td class="right"><b>4.64</b> / 9</td>
+    </tr></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section">
+  <div class="card">
+    <div class="section-head"><h2>Teacher Performance & Ranking</h2><span class="badge">Assigned-subject average</span></div>
+    <table>
+      <thead><tr><th>Rank</th><th>Teacher Code</th><th>Assigned Subjects</th><th class="right">Average</th></tr></thead>
+      <tbody>
+    <tr>
+      <td><span class="rank gold">1</span></td>
+      <td><b>AHM</b></td>
+      <td>First Language 2</td>
+      <td class="right"><b>8.76</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">2</span></td>
+      <td><b>AZZ</b></td>
+      <td>First Language 1, Third Language</td>
+      <td class="right"><b>8.68</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">3</span></td>
+      <td><b>RSD</b></td>
+      <td>IT</td>
+      <td class="right"><b>8.39</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">4</span></td>
+      <td><b>SMS</b></td>
+      <td>English</td>
+      <td class="right"><b>7.21</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">5</span></td>
+      <td><b>SMD</b></td>
+      <td>Biology</td>
+      <td class="right"><b>5.55</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">6</span></td>
+      <td><b>FRQ</b></td>
+      <td>Social Science, Physics, Chemistry</td>
+      <td class="right"><b>5.22</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">7</span></td>
+      <td><b>MHD</b></td>
+      <td>Mathematics</td>
+      <td class="right"><b>4.70</b> / 9</td>
+    </tr></tbody>
+    </table>
+    <div class="note" style="margin-top:14px">Teacher averages are calculated from all student grade points in the subject(s) assigned to each teacher code. The source marklist contains teacher codes, so the dashboard keeps those codes.</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="card">
+    <div class="section-head"><h2>Student Performance Ranking</h2><span class="badge">Average grade point</span></div>
+    <table>
+      <thead><tr><th>Position</th><th>Student</th><th>AD No.</th><th class="right">Average</th></tr></thead>
+      <tbody>
+    <tr>
+      <td><span class="rank gold">1</span></td>
+      <td><b>MOHAMMED SAFDHIL P.K</b></td>
+      <td>928</td>
+      <td class="right"><b>8.30</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank gold">2</span></td>
+      <td><b>MUHAMMED AFNAN</b></td>
+      <td>917</td>
+      <td class="right"><b>8.30</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank gold">3</span></td>
+      <td><b>MUHAMMED AJNAS T K C</b></td>
+      <td>903</td>
+      <td class="right"><b>8.20</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">4</span></td>
+      <td><b>MUHAMMED SINAN K</b></td>
+      <td>912</td>
+      <td class="right"><b>7.90</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">5</span></td>
+      <td><b>MUHAMMAD BIN HARIS</b></td>
+      <td>906</td>
+      <td class="right"><b>7.70</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">6</span></td>
+      <td><b>MUHAMMED MUBASHIR.M.A</b></td>
+      <td>890</td>
+      <td class="right"><b>7.60</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">7</span></td>
+      <td><b>ABDUL RAHMAN RASHEED</b></td>
+      <td>899</td>
+      <td class="right"><b>7.40</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">8</span></td>
+      <td><b>MUHAMMED UVAISE</b></td>
+      <td>891</td>
+      <td class="right"><b>7.30</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">9</span></td>
+      <td><b>MUHAMMED</b></td>
+      <td>919</td>
+      <td class="right"><b>7.20</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">10</span></td>
+      <td><b>MUHAMMED AFEEF. AT</b></td>
+      <td>929</td>
+      <td class="right"><b>7.10</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">11</span></td>
+      <td><b>YAHYA KK</b></td>
+      <td>902</td>
+      <td class="right"><b>7.10</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">12</span></td>
+      <td><b>AHAMMED AMIR K</b></td>
+      <td>918</td>
+      <td class="right"><b>6.90</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">13</span></td>
+      <td><b>NAWA SHAREEF S</b></td>
+      <td>907</td>
+      <td class="right"><b>6.90</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">14</span></td>
+      <td><b>ABDUL RAHMAN EYAS</b></td>
+      <td>900</td>
+      <td class="right"><b>6.80</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">15</span></td>
+      <td><b>AFZAL HARIS . C</b></td>
+      <td>910</td>
+      <td class="right"><b>6.80</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">16</span></td>
+      <td><b>MUHAMMED RAZIM P R</b></td>
+      <td>901</td>
+      <td class="right"><b>6.80</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">17</span></td>
+      <td><b>NAMAZ HUSSAIN</b></td>
+      <td>915</td>
+      <td class="right"><b>6.70</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">18</span></td>
+      <td><b>MIDLAJ VP</b></td>
+      <td>916</td>
+      <td class="right"><b>6.60</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">19</span></td>
+      <td><b>MUHAMMAD SHAHEEM K</b></td>
+      <td>930</td>
+      <td class="right"><b>6.60</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">20</span></td>
+      <td><b>MUHAMMED SHIBLI P</b></td>
+      <td>898</td>
+      <td class="right"><b>6.50</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">21</span></td>
+      <td><b>AHAMMED AFSAL MG</b></td>
+      <td>894</td>
+      <td class="right"><b>6.30</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">22</span></td>
+      <td><b>MUHAMMED MIKHDAD</b></td>
+      <td>909</td>
+      <td class="right"><b>6.30</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">23</span></td>
+      <td><b>MUHSIN. P</b></td>
+      <td>924</td>
+      <td class="right"><b>6.30</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">24</span></td>
+      <td><b>NAJEEB MAHMOOD PI</b></td>
+      <td>1075</td>
+      <td class="right"><b>6.30</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">25</span></td>
+      <td><b>MOHAMMED BASHEER KP</b></td>
+      <td>1082</td>
+      <td class="right"><b>6.10</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">26</span></td>
+      <td><b>MOHAMMED DANISH E M</b></td>
+      <td>931</td>
+      <td class="right"><b>6.10</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">27</span></td>
+      <td><b>MOHAMMED JAFFER SADIK PP</b></td>
+      <td>1078</td>
+      <td class="right"><b>6.00</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">28</span></td>
+      <td><b>MUHAMMED HASHIM</b></td>
+      <td>897</td>
+      <td class="right"><b>6.00</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">29</span></td>
+      <td><b>MUHAMMED RAZIN KK</b></td>
+      <td>922</td>
+      <td class="right"><b>6.00</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">30</span></td>
+      <td><b>RISHAN MUHAMMED SAEED</b></td>
+      <td>—</td>
+      <td class="right"><b>6.00</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">31</span></td>
+      <td><b>MOHAMMED ADNAN P</b></td>
+      <td>1077</td>
+      <td class="right"><b>5.90</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">32</span></td>
+      <td><b>MOHAMMED SHAKIRUL</b></td>
+      <td>1081</td>
+      <td class="right"><b>5.60</b> / 9</td>
+    </tr>
+    <tr>
+      <td><span class="rank ">33</span></td>
+      <td><b>MOHAMMED SHIBLI</b></td>
+      <td>1080</td>
+      <td class="right"><b>5.60</b> / 9</td>
+    </tr></tbody>
+    </table>
+  </div>
+</section>
+
+<div class="footer">SSLC 2025–26 BATCH MARKLIST • Updated using the latest supplied marklist image</div>
+</div>
+</body>
+</html>
